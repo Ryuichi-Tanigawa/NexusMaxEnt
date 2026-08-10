@@ -1,0 +1,43 @@
+Scientific Background and Acknowledgments
+
+1. Scientific Background & Pioneering Works
+This software is informed by and built upon published research in maximum-entropy 
+reconstruction, constrained optimization, inverse Laplace transformation, and 
+DOSY NMR analysis.
+
+The author gratefully acknowledges Dr. Marc-André Delsuc and the developers and 
+contributors of GIFA and PALMA for their pioneering scientific work in maximum-entropy 
+NMR reconstruction and advanced data processing algorithms. 
+
+Special acknowledgment is also given to Dr. John Skilling and co-workers for their 
+foundational contributions to the maximum entropy method in spectroscopy and data analysis.
+
+Key foundational literature includes:
+- PALMA: Cherni, A., Chouzenoux, E., & Delsuc, M. A. (2017). PALMA, an improved 
+  algorithm for DOSY signal processing. Analyst, 142(5), 772-779.
+- GIFA: Pons, J.-L., Malliavin, T. E., & Delsuc, M. A. (1996). Gifa V. 4: A complete 
+  package for NMR data set processing. Journal of Biomolecular NMR, 8(4), 445-452. 
+  https://doi.org/10.1007/BF00228146
+- Classic MaxEnt: Skilling, J. (1989). Classic Maximum Entropy. In Maximum Entropy 
+  and Bayesian Methods (pp. 45-52). Springer, Dordrecht.
+
+2. Open-Source Ecosystem & Tools
+This software relies heavily on the vibrant Python open-source community and the 
+following foundational tools and libraries:
+
+- Python Language & Runtime: Core programming environment.
+- NumPy & SciPy: Essential libraries for high-performance numerical computing 
+  and scientific algorithms.
+- CuPy: GPU-accelerated array computing for high-speed matrix processing.
+- Matplotlib: Data visualization and spectral plotting.
+- Cython & Setuptools: Performance optimization and build management.
+- PyInstaller: Packaging into standalone executable distribution.
+- Miniconda & conda-forge: Environment management and package distribution.
+
+The author expresses sincere gratitude to all maintainers, developers, and 
+contributors who make these invaluable tools available to the global scientific 
+and technical community.
+
+3. Technical Assistance
+The software architecture, algorithmic logic, and codebase were developed by 
+the author with technical assistance from generative AI tools, including Google Gemini.

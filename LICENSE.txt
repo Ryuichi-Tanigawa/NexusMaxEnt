@@ -1,0 +1,55 @@
+CUSTOM END-USER LICENSE AGREEMENT (EULA)
+
+Copyright (c) 2026 Ryuichi Tanigawa. All rights reserved.
+
+This software ("NexusMaxEnt" or the "Software") consists of 
+proprietary code and specific freely distributable components 
+under the terms defined below. By downloading, installing, 
+or using the Software, you agree to be bound by the terms 
+of this License.
+
+1. PERMITTED USE (Commercial & Personal)
+Users are permitted to use this Software for personal, 
+academic, and commercial purposes without financial charge, 
+subject to the restrictions in this License. However, direct 
+commercial resale or bundling of the Software as a paid 
+product is strictly prohibited.
+
+2. ACADEMIC & PROFESSIONAL CITATION
+If you use this Software or its generated results in any published 
+research, academic papers, presentations, or reports, you are 
+strongly requested to properly cite the Author (Ryuichi Tanigawa) 
+and the Software name ("NexusMaxEnt").
+
+3. PARTIAL FREE REDISTRIBUTION (ADMM Mirror CPU Component)
+(a) Notwithstanding Section 4, the specific compiled binary 
+    or module designated explicitly as the "ADMM Mirror CPU 
+    version" is permitted for redistribution free of charge.
+(b) You may redistribute the "ADMM Mirror CPU version" 
+    component solely in its original, unmodified form, provided that 
+    this License and proper attribution (copyright notice and author 
+    information) are included alongside the component.
+(c) Redistributing any other components or the Software as a whole 
+    without prior written permission from the Author is strictly prohibited.
+
+4. RESTRICTIONS
+(a) REVERSE ENGINEERING: You shall not decompile, 
+    disassemble, reverse engineer, or otherwise attempt to 
+    derive the source code of any proprietary parts of this 
+    Software.
+(b) MODIFICATION: You shall not modify, adapt, translate, 
+    or create derivative works based upon the Software or 
+    any portion thereof.
+
+5. DISCLAIMER OF WARRANTY AND LIABILITY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, 
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE 
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR 
+PURPOSE AND NONINFRINGEMENT. 
+
+IN NO EVENT SHALL THE AUTHOR OR COPYRIGHT HOLDERS BE LIABLE 
+FOR ANY CLAIM, DAMAGES, OR OTHER LIABILITY, WHETHER IN AN 
+ACTION OF CONTRACT, TORT, OR OTHERWISE, ARISING FROM, OUT OF, 
+OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER 
+DEALINGS IN THE SOFTWARE. USE OF THE SOFTWARE IS 
+ENTIRELY AT YOUR OWN RISK.
