@@ -31,8 +31,9 @@ following foundational tools and libraries:
 - CuPy: GPU-accelerated array computing for high-speed matrix processing.
 - Matplotlib: Data visualization and spectral plotting.
 - Cython & Setuptools: Performance optimization and build management.
-- PyInstaller: Packaging into standalone executable distribution.
-- Miniconda & conda-forge: Environment management and package distribution.
+- PyInstaller: Application launcher packaging into a standalone executable.
+- conda-constructor: Reproducible environment construction and deployment.
+- Miniforge & conda-forge: Environment management and community-driven package distribution.
 
 The author expresses sincere gratitude to all maintainers, developers, and 
 contributors who make these invaluable tools available to the global scientific 
