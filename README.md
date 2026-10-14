@@ -7,32 +7,41 @@ A maximum-entropy processing tool for 2D-DOSY NMR reconstruction.
 ## Features (Promotional CPU Version)
 - **Advanced NMR Data Processing**: Powered by algorithms inspired by PALMA, GIFA, and Classic MaxEnt techniques.
 - **ADMM Mirror CPU Version**: Includes a freely redistributable CPU-based optimization module for evaluation and promotional purposes. *(Note: Other proprietary CPU and GPU algorithms are excluded).*
-- **Standalone Execution**: Runs as a portable desktop application without requiring external Python setup.
+- **Installer-based Execution**: Features a dedicated installer that sets up a self-contained environment, eliminating the need for manual Python or dependency configuration.
 
 ---
 
 ## System Requirements
 - **OS**: Windows 11 (64-bit recommended)
-- **Runtime**: Self-contained executable
+- **Runtime**: Self-contained environment (Installer-based)
 
 ---
 
 ## How to Use & Data Preparation
 
-### 1. Data Processing in Bruker TopSpin
+### 1-A. Data Processing in Bruker TopSpin
 Designed for **1H DOSY NMR data** measured using the **bpp-ste-led** sequence (e.g., `ledbpgp2s`).
 - Ensure proper phase correction (e.g., `apk`) is completed in 1D/2D before export.
 - Set F2 size (`SI`) to approx 8192 points.
 - Set F1 size (`SI`) to match F1 `TD`.
 - Execute **`xf2`** and **`abs2`** to generate the **`2rr`** file.
 
+### 1-B. Data Processing in JEOL Delta
+Designed for **1H DOSY NMR data** measured using bipolar gradient pulse sequences (e.g., `bpp_led_dosy` or equivalent BPP-STE sequences).
+- Apply Fourier Transform (FT) along the direct dimension (F2 / X-axis) only.
+- Ensure proper phase correction is completed before export.
+- Set the F2 data points to approx 8192 points.
+- Export the processed 2D dataset in **JEOL Generic format** to generate paired **`.hdr`** and **`.bin`** files.
+*(Note: For step-by-step instructions with GUI screenshots, please refer to the User Manual).*
+
 ### 2. Required Experimental Parameters
 Automatically extracts: **`d20`**, **`p30`**, **`d16`**, and **`difflist`**. *(Manual fallback input available if retrieval fails).*
 
 ### 3. Running the Application
-1. Extract the downloaded ZIP archive.
-2. Double-click the `.exe` file to launch.
-3. Load your prepared TopSpin dataset directory (`2rr` file and parameters).
+1. Run the provided installer (.exe) and follow the on-screen instructions to install the application to your preferred directory.
+2. Navigate to the installation directory and launch `NexusMaxEnt.exe`.  
+*(Optional: You may create a desktop shortcut for easier access).*  
+3. Load your prepared dataset (Bruker TopSpin directory, JEOL Generic files, or `.npz` file).
 
 ---
 
@@ -61,7 +70,7 @@ The input `.npz` file must contain the following specific keys:
 - **`axis_f2`**: 1D Array, shape `(N_f2,)` (F2 chemical shifts in ppm)
 - **`difflist`**: 1D Array, shape `(N_f1,)` (Gradient strength list)
 - **`d20`**: Float (Big delta in seconds)
-- **`p30`**: Float (Little delta in microseconds)
+- **`p30`**: Float (Single gradient pulse duration p30 in microseconds; Little Delta / 2)
 - **`d16`**: Float (Gradient recovery delay in seconds)
 
 *Note: Custom `.npz` files can easily be generated using basic Python scripts or generative AI.*
@@ -97,7 +106,7 @@ Provided under a custom proprietary license.
 Acknowledges Dr. Marc-André Delsuc and the developers of **GIFA** and **PALMA**, as well as Dr. John Skilling for foundational Maximum Entropy methods. Full citations are available in **`ACKNOWLEDGMENTS.txt`**.
 
 ### 2. Open-Source Ecosystem
-Built upon **Python**, **NumPy**, **SciPy**, **CuPy**, **Matplotlib**, **Cython**, **PyInstaller**, and **Miniconda**. Refer to **`ACKNOWLEDGMENTS.txt`** for details.
+Built upon **Python**, **NumPy**, **SciPy**, **CuPy**, **Matplotlib**, **Cython**, **PyInstaller**, **conda-constructor**, and **Miniforge**. Refer to **`ACKNOWLEDGMENTS.txt`** for details.
 
 ### 3. Technical Support
 Developed with technical assistance from generative AI tools, including Google Gemini.
